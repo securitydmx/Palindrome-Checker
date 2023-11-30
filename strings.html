@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is for Week 4 of CSC102 
+        We will add event driven programming
+    Trevor Hackney
+denhackn@uat.edu 
+11Nov2023
+Setting up page to play audio clip of the internation space station.
+-->
+
+<head>
+    <script src="stringCode.js"> </script>
+    <link rel="stylesheet" href="stringsStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+</head>
+
+<body>
+    <header>
+        <h1> Welcome to My strings.html page </h1>
+    </header>
+    <nav>
+        <h2>
+            Navigation
+        </h2>
+        <a href="./index.html">Home</a> <br>
+        <a href="./boards.html">Boards</a> <br>
+        <a href="./game.html">Games</a> <br>
+        <a href="./strings.html">strings</a> <br>
+    </nav>
+    <!-- The welcome to my string.html code -->
+    <h2> Input Validation Section</h2>
+    <!-- Input validation section-->
+    <div id="loginStatus"> Press Submit to login</div>
+    <p> Please submit the following data for validation</p>
+    <!-- Submission form-->
+    <form id="creditSubmit" onsubmit="return false">
+        First Name: <input tyepe="text" id="fName"> <br>
+        <!-- code to fill in name-->
+        Last Name: <input tyepe="text" id="lName"> <br>
+        <!-- Last name code-->
+        Zip code: <input tyepe="text" id="zipCode"> <br>
+        <!-- Zip code- code. -->
+        <input type="submit" onclick="checkCreds();">
+    </form>
+    <br>
+    <br>
+    <h2> Palindrome Checker </h2>
+    <br>
+    <div id="PalinStatus"> Palindrome Status </div>
+    <br>
+    <form id="PalinSubmit" onsubmit="return false">
+        Enter Possible Palindrome: <input type="text" id="PalinInput"> <br>
+        <br>
+        <input type="Submit" onclick="checkPalin();">
+    </form>
+</body>
+<br>
+<br>
+<br>
+<!-- Section to play audio-->
+
+<body>
+    <h2>Play Audio</h2>
+    <button onclick="playStation();"> Press to hear space station sounds</button>
+    <br>
+    <br>
+    <button class="lgButton" onclick="playBowie();"> Press to hear river sounds</button>
+    <br>
+    <br>
+    <footer>University of Advancing Technology<br>
+        2625 W. Baseline Road<br>
+        Tempe, Az 85283-1956<br>
+        <br>
+        602-383-8228
+
+    </footer>
+</body>
+
+</html>
